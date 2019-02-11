@@ -1,0 +1,8 @@
+/usr/local/include/okFrontPanelDLL.h
+/usr/local/lib/okimpl_fpoip.so
+/usr/local/lib/libokFrontPanel.so
+/usr/local/bin/fpoip-passwd
+/usr/local/bin/fpoip-server
+/usr/local/include/okFrontPanelDLL.h
+/usr/local/lib/libokFrontPanel.so
+/etc/udev/rules.d/60-opalkelly.rules
