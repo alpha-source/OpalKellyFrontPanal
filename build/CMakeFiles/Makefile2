@@ -81,55 +81,109 @@ API/preinstall:
 # Directory level rules for directory bin
 
 # Convenience name for "all" pass in the directory.
-bin/all:
+bin/all: bin/C/all
 
 .PHONY : bin/all
 
 # Convenience name for "clean" pass in the directory.
-bin/clean:
+bin/clean: bin/C/clean
 
 .PHONY : bin/clean
 
 # Convenience name for "preinstall" pass in the directory.
-bin/preinstall:
+bin/preinstall: bin/C/preinstall
 
 .PHONY : bin/preinstall
+
+#=============================================================================
+# Directory level rules for directory bin/C
+
+# Convenience name for "all" pass in the directory.
+bin/C/all:
+
+.PHONY : bin/C/all
+
+# Convenience name for "clean" pass in the directory.
+bin/C/clean:
+
+.PHONY : bin/C/clean
+
+# Convenience name for "preinstall" pass in the directory.
+bin/C/preinstall:
+
+.PHONY : bin/C/preinstall
 
 #=============================================================================
 # Directory level rules for directory include
 
 # Convenience name for "all" pass in the directory.
-include/all:
+include/all: include/C/all
 
 .PHONY : include/all
 
 # Convenience name for "clean" pass in the directory.
-include/clean:
+include/clean: include/C/clean
 
 .PHONY : include/clean
 
 # Convenience name for "preinstall" pass in the directory.
-include/preinstall:
+include/preinstall: include/C/preinstall
 
 .PHONY : include/preinstall
+
+#=============================================================================
+# Directory level rules for directory include/C
+
+# Convenience name for "all" pass in the directory.
+include/C/all:
+
+.PHONY : include/C/all
+
+# Convenience name for "clean" pass in the directory.
+include/C/clean:
+
+.PHONY : include/C/clean
+
+# Convenience name for "preinstall" pass in the directory.
+include/C/preinstall:
+
+.PHONY : include/C/preinstall
 
 #=============================================================================
 # Directory level rules for directory lib
 
 # Convenience name for "all" pass in the directory.
-lib/all:
+lib/all: lib/C/all
 
 .PHONY : lib/all
 
 # Convenience name for "clean" pass in the directory.
-lib/clean:
+lib/clean: lib/C/clean
 
 .PHONY : lib/clean
 
 # Convenience name for "preinstall" pass in the directory.
-lib/preinstall:
+lib/preinstall: lib/C/preinstall
 
 .PHONY : lib/preinstall
+
+#=============================================================================
+# Directory level rules for directory lib/C
+
+# Convenience name for "all" pass in the directory.
+lib/C/all:
+
+.PHONY : lib/C/all
+
+# Convenience name for "clean" pass in the directory.
+lib/C/clean:
+
+.PHONY : lib/C/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lib/C/preinstall:
+
+.PHONY : lib/C/preinstall
 
 #=============================================================================
 # Directory level rules for directory udev
@@ -148,6 +202,24 @@ udev/clean:
 udev/preinstall:
 
 .PHONY : udev/preinstall
+
+#=============================================================================
+# Directory level rules for directory conf
+
+# Convenience name for "all" pass in the directory.
+conf/all:
+
+.PHONY : conf/all
+
+# Convenience name for "clean" pass in the directory.
+conf/clean:
+
+.PHONY : conf/clean
+
+# Convenience name for "preinstall" pass in the directory.
+conf/preinstall:
+
+.PHONY : conf/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

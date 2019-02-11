@@ -38,6 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libokFrontPanel.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libokFrontPanel.so"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapture.so"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapture.so.2"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapture.so.2.13.3.31"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapture_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycaptured_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturegui.so.2"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturegui.so.2.13.3.31"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturegui_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycaptureguid_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturevideo.so"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturevideo.so.2"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturevideo.so.2.13.3.31"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturevideo_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libflycapturevideod_static.a"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/lib/libokFrontPanel.so"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/lib/C/cmake_install.cmake")
+
 endif()
 

@@ -41,6 +41,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES
     "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/fpoip-passwd"
     "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/fpoip-server"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/AsyncTriggerEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/BusEventsEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/CustomImageEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/ExtendedShutterEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/FlyCap2.glade"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/FlyCap2_arm"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/FlyCapture2GUI_GTK.glade"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/FlyCapture2Test"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/GigEGrabEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/GrabCallbackEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/HighDynamicRangeEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/ImageEventEx"
+    "/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/bin/MultipleCameraEx"
     )
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/bin/C/cmake_install.cmake")
+
 endif()
 

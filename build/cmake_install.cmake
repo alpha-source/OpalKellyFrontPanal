@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/include/cmake_install.cmake")
   include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/lib/cmake_install.cmake")
   include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/udev/cmake_install.cmake")
+  include("/mnt/c/Workspace/Projects/soccentric/OpalKellyFrontPanal/build/conf/cmake_install.cmake")
 
 endif()
 
